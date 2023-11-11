@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #e0e0e0;
+}
+
+.hero {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+
+    background-color: #3666b6;
+
+    color: white;
+    text-transform: uppercase;
+}
+
+.content {
+    padding: 2rem 12rem;
+}
+
+#superhero_form .fields {
+    display: flex;
+    gap: 4px;
+}
+
+#superhero_form .fields > input {
+    flex-grow: 1;
+    height: 3rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    padding: 0 1rem;
+
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#superhero_form label {
+    font-weight: bold;
+}
+
+#superhero_form .fields {
+    margin-top: 1rem;
+}
+
+#superhero_form .fields > button {
+    width: 6rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #ad2323;
+
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.result-heading {
+    margin: 2rem 0;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.result-divider {
+    margin-bottom: 2rem;
+}
+
+.result-container ul {
+    padding-left: 2rem;
+}
+
+#result h3 {
+    margin-bottom: 1rem;
+}
+
+.error-msg {
+    color: #ad2323;
+    font-weight: bold;
+    text-transform: uppercase;
+}

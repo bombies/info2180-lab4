@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>INFO2180 Lab 4</title>
 </head>
 <body>
-    <button id="search">Search</button>
-    <script src="app.js"></script>
+<div class="hero">
+    <h1>Avengers Character search</h1>
+</div>
+<div class="content">
+    <form id="superhero_form">
+        <label id="name_label" for="name">Search by Full Name or Alias</label>
+        <div class="fields">
+            <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    aria-labelledby="name_label"
+                    placeholder="e.g. Captain America or Steve Rogers"
+            />
+            <button type="submit" id="search">Search</button>
+        </div>
+    </form>
+    <div class="result-container">
+        <h2 class="result-heading">Result</h2>
+        <hr class="result-divider"/>
+        <div id="result"></div>
+    </div>
+</div>
+<script src="app.js"></script>
 </body>
 </html>
